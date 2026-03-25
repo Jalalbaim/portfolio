@@ -12,3 +12,17 @@
     }
   });
 })();
+
+// Hide PDF report buttons whose file doesn't exist yet (avoids GitHub Pages 404)
+(function () {
+  var reportLinks = document.querySelectorAll('.proj-footer a[href$=".pdf"]');
+  reportLinks.forEach(function (link) {
+    fetch(link.href, { method: 'HEAD' })
+      .then(function (res) {
+        if (!res.ok) link.style.display = 'none';
+      })
+      .catch(function () {
+        link.style.display = 'none';
+      });
+  });
+})();

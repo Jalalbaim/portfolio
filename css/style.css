@@ -7,6 +7,8 @@
 /* 1. Variables
    ========================================== */
 :root {
+  color-scheme: light;
+
   --bg:          #f8f9fb;
   --bg-alt:      #f0f2f7;
   --surface:     #ffffff;
@@ -303,9 +305,9 @@ section + section { border-top: 1px solid var(--border-sub); }
 }
 
 .edu-logo-wrap {
-  width: 50px;
-  height: 50px;
-  background: var(--bg-alt);
+  width: 72px;
+  height: 72px;
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   display: flex;
@@ -313,9 +315,10 @@ section + section { border-top: 1px solid var(--border-sub); }
   justify-content: center;
   overflow: hidden;
   flex-shrink: 0;
+  padding: 6px;
 }
 
-.edu-logo-wrap img { width: 36px; height: 36px; object-fit: contain; }
+.edu-logo-wrap img { width: 56px; height: 56px; object-fit: contain; }
 
 .edu-logo-placeholder {
   font-size: 11px;
@@ -399,9 +402,9 @@ section + section { border-top: 1px solid var(--border-sub); }
 .exp-card:hover { border-color: var(--accent-brd); }
 
 .exp-logo-wrap {
-  width: 58px;
-  height: 58px;
-  background: var(--bg-alt);
+  width: 80px;
+  height: 80px;
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   display: flex;
@@ -409,9 +412,10 @@ section + section { border-top: 1px solid var(--border-sub); }
   justify-content: center;
   overflow: hidden;
   flex-shrink: 0;
+  padding: 8px;
 }
 
-.exp-logo-wrap img { width: 40px; height: 40px; object-fit: contain; }
+.exp-logo-wrap img { width: 64px; height: 64px; object-fit: contain; }
 
 .exp-logo-placeholder {
   font-size: 12px;

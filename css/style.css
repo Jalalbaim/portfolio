@@ -203,8 +203,8 @@ section + section {
 }
 
 .hero-photo {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   max-width: none; /* prevent global img { max-width: 100% } from collapsing the size */
   border-radius: var(--radius);
   object-fit: cover;
@@ -714,8 +714,8 @@ footer {
     order: 1;
   }
   .hero-photo {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
   }
   .hero-text {
     order: 2;
@@ -762,8 +762,8 @@ footer {
     font-size: 26px;
   }
   .hero-photo {
-    width: 240px;
-    height: 240px;
+    width: 260px;
+    height: 260px;
   }
   .skill-row {
     flex-direction: column;

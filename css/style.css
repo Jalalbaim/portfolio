@@ -78,7 +78,7 @@ a:focus-visible {
 }
 img {
   display: block;
-  max-width: 100%;
+  max-width: 50%;
 }
 ul {
   list-style: none;

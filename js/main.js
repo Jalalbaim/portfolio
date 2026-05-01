@@ -13,10 +13,10 @@
   });
 })();
 
-// Hide PDF report buttons whose file doesn't exist yet (avoids GitHub Pages 404)
+// Hide PDF links whose file doesn't exist (avoids GitHub Pages 404)
 (function () {
-  var reportLinks = document.querySelectorAll('.proj-footer a[href$=".pdf"]');
-  reportLinks.forEach(function (link) {
+  var pdfLinks = document.querySelectorAll('a[href$=".pdf"]');
+  pdfLinks.forEach(function (link) {
     fetch(link.href, { method: 'HEAD' })
       .then(function (res) {
         if (!res.ok) link.style.display = 'none';

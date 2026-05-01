@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" style="color-scheme: light;">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,171 +7,147 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- ── Navigation ── -->
+
     <nav class="nav">
       <div class="container">
         <a class="nav-brand" href="index.html">Jalal <span>Baim</span></a>
         <ul class="nav-links">
-          <li><a href="index.html">Main</a></li>
+          <li><a href="index.html">About</a></li>
           <li><a href="experience.html">Experience</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="projects.html">Research</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- ── Page Header ── -->
     <header class="page-header">
       <div class="container">
         <h1>Experience</h1>
         <p class="subtitle">
-          Industry and research roles in AI engineering, computer vision, and
-          machine learning.
+          Industry and research positions in AI engineering, generative models,
+          and computer vision.
         </p>
       </div>
     </header>
 
-    <!-- ── Experience Cards ── -->
     <section>
       <div class="container">
-        <div class="exp-list">
+        <ul class="exp-list">
+
           <!-- BNP Paribas -->
-          <div class="exp-card">
-            <div class="exp-logo-wrap">
-              <img
-                src="logos/bnp.png"
-                alt="BNP Paribas"
-                onerror="
-                  this.style.display = 'none';
-                  this.nextElementSibling.style.display = 'flex';
-                "
-              />
-              <span class="exp-logo-placeholder" style="display: none"
-                >BNP</span
-              >
+          <li class="exp-entry">
+            <div class="exp-logo-col">
+              <div class="exp-logo-wrap">
+                <img
+                  src="logos/bnp.png"
+                  alt="BNP Paribas"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                />
+                <span class="exp-logo-placeholder" style="display:none">BNP</span>
+              </div>
             </div>
             <div class="exp-content">
-              <div class="exp-header">
+              <div class="exp-role-line">
                 <span class="exp-role">AI Engineer</span>
-                <div class="exp-badges">
-                  <span class="badge badge-green">Present</span>
-                  <span class="badge badge-default">Mar 2026 – Present</span>
-                  <span class="badge badge-default">Paris, France</span>
-                </div>
+                <span class="exp-dates">Mar 2026 – Present</span>
               </div>
-              <p class="exp-company">BNP Paribas</p>
+              <p class="exp-org">BNP Paribas</p>
+              <p class="exp-loc">Paris, France</p>
               <p class="exp-desc">
                 Working on production-grade AI systems within one of Europe's
                 leading banking groups. Designing and deploying machine learning
-                solutions with a focus on reliability, scalability, and
-                real-world impact in financial services.
+                solutions with a focus on reliability, scalability, and impact
+                in financial services.
               </p>
             </div>
-          </div>
+          </li>
 
           <!-- CEA LIST -->
-          <div class="exp-card">
-            <div class="exp-logo-wrap">
-              <img
-                src="logos/cea_list.png"
-                alt="CEA LIST"
-                onerror="
-                  this.style.display = 'none';
-                  this.nextElementSibling.style.display = 'flex';
-                "
-              />
-              <span class="exp-logo-placeholder" style="display: none"
-                >CEA</span
-              >
+          <li class="exp-entry">
+            <div class="exp-logo-col">
+              <div class="exp-logo-wrap">
+                <img
+                  src="logos/cea_list.png"
+                  alt="CEA LIST"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                />
+                <span class="exp-logo-placeholder" style="display:none">CEA</span>
+              </div>
             </div>
             <div class="exp-content">
-              <div class="exp-header">
+              <div class="exp-role-line">
                 <span class="exp-role">AI Research Intern</span>
-                <div class="exp-badges">
-                  <span class="badge badge-default">Feb – Aug 2025</span>
-                  <span class="badge badge-default">Grenoble, France</span>
-                </div>
+                <span class="exp-dates">Feb – Aug 2025</span>
               </div>
-              <p class="exp-company">
-                CEA LIST — French Alternative Energies and Atomic Energy
-                Commission
-              </p>
+              <p class="exp-org">CEA LIST — French Alternative Energies and Atomic Energy Commission</p>
+              <p class="exp-loc">Grenoble, France</p>
               <p class="exp-desc">
-                Conducted research at one of France's leading public AI
-                laboratories. Worked on generative image editing using
-                flow-matching diffusion models, leading to the FocusFlow project
-                — a novel localized editing technique built on top of Stable
-                Diffusion 3 that eliminates the need for manual masks via
-                automatic velocity-field analysis.
+                Research at one of France's leading public AI laboratories.
+                Worked on generative image editing using flow-matching diffusion
+                models. Developed FocusFlow, a localized editing technique built
+                on Stable Diffusion 3 that eliminates the need for manual masks
+                via automatic velocity-field analysis. The method outperformed
+                FlowEdit and SDEdit baselines on CLIP-T score across 40 test cases.
               </p>
             </div>
-          </div>
+          </li>
 
           <!-- L'Oréal -->
-          <div class="exp-card">
-            <div class="exp-logo-wrap">
-              <img
-                src="logos/Loreal.png"
-                alt="L'Oréal"
-                onerror="
-                  this.style.display = 'none';
-                  this.nextElementSibling.style.display = 'flex';
-                "
-              />
-              <span class="exp-logo-placeholder" style="display: none"
-                >L'O</span
-              >
+          <li class="exp-entry">
+            <div class="exp-logo-col">
+              <div class="exp-logo-wrap">
+                <img
+                  src="logos/Loreal.png"
+                  alt="L'Oréal"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                />
+                <span class="exp-logo-placeholder" style="display:none">L'O</span>
+              </div>
             </div>
             <div class="exp-content">
-              <div class="exp-header">
+              <div class="exp-role-line">
                 <span class="exp-role">R&amp;I Intern</span>
-                <div class="exp-badges">
-                  <span class="badge badge-default">Jun – Aug 2024</span>
-                </div>
+                <span class="exp-dates">Jun – Aug 2024</span>
               </div>
-              <p class="exp-company">L'Oréal Research &amp; Innovation</p>
+              <p class="exp-org">L'Oréal Research &amp; Innovation</p>
+              <p class="exp-loc">France</p>
               <p class="exp-desc">
-                Joined L'Oréal's R&amp;I division to apply AI and computer
-                vision techniques to cosmetic research challenges. Worked at the
-                intersection of machine learning and applied science in an
-                industrial R&amp;D setting, contributing to data-driven analysis
-                pipelines.
+                Applied AI and computer vision techniques to cosmetic research
+                challenges within L'Oréal's R&amp;I division. Contributed to
+                data-driven analysis pipelines at the intersection of machine
+                learning and applied science in an industrial R&amp;D setting.
               </p>
             </div>
-          </div>
+          </li>
 
-          <!-- Hubert-Curien -->
-          <div class="exp-card">
-            <div class="exp-logo-wrap">
-              <img
-                src="logos/Logo_LabHC.png"
-                alt="Hubert-Curien Lab"
-                onerror="
-                  this.style.display = 'none';
-                  this.nextElementSibling.style.display = 'flex';
-                "
-              />
-              <span class="exp-logo-placeholder" style="display: none">HC</span>
+          <!-- Hubert-Curien Lab -->
+          <li class="exp-entry">
+            <div class="exp-logo-col">
+              <div class="exp-logo-wrap">
+                <img
+                  src="logos/Logo_LabHC.png"
+                  alt="Hubert-Curien Laboratory"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                />
+                <span class="exp-logo-placeholder" style="display:none">HC</span>
+              </div>
             </div>
             <div class="exp-content">
-              <div class="exp-header">
+              <div class="exp-role-line">
                 <span class="exp-role">AI Research Intern</span>
-                <div class="exp-badges">
-                  <span class="badge badge-default">Oct 2023 – May 2024</span>
-                </div>
+                <span class="exp-dates">Oct 2023 – May 2024</span>
               </div>
-              <p class="exp-company">
-                Hubert-Curien Laboratory — UMR CNRS 5516
-              </p>
+              <p class="exp-org">Hubert-Curien Laboratory — UMR CNRS 5516</p>
+              <p class="exp-loc">Saint-Étienne, France</p>
               <p class="exp-desc">
-                Research internship at the Hubert-Curien Laboratory (CNRS), a
-                joint research unit affiliated with the University of
-                Saint-Étienne. Focused on computer vision and deep learning,
-                contributing to neural architecture research and image analysis
-                in an academic setting.
+                Research internship at a CNRS joint research unit affiliated
+                with the University of Saint-Étienne. Focused on computer vision
+                and deep learning, contributing to neural architecture research
+                and image analysis in an academic setting.
               </p>
             </div>
-          </div>
-        </div>
+          </li>
+
+        </ul>
       </div>
     </section>
 

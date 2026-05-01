@@ -203,8 +203,9 @@ section + section {
 }
 
 .hero-photo {
-  width: 160px;
-  height: 160px;
+  /* Un peu plus grand par défaut + fluide si la place le permet */
+  width: clamp(160px, 22vw, 220px);
+  height: clamp(160px, 22vw, 220px);
   border-radius: var(--radius);
   object-fit: cover;
   border: 1px solid var(--border);
@@ -706,10 +707,17 @@ footer {
   .hero-inner {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+  }
+  .hero-photo-wrap {
+    order: 1;
   }
   .hero-photo {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
+  }
+  .hero-text {
+    order: 2;
   }
   .edu-entry {
     grid-template-columns: 1fr;
@@ -753,8 +761,8 @@ footer {
     font-size: 26px;
   }
   .hero-photo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
   .skill-row {
     flex-direction: column;

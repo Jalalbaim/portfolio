@@ -207,7 +207,6 @@ section + section {
   height: 80px;
   border-radius: var(--radius);
   object-fit: cover;
-  object-position: center top;
   border: 1px solid var(--border);
 }
 
@@ -705,7 +704,7 @@ footer {
    ========================================== */
 @media (max-width: 680px) {
   .hero-inner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
   }
   .hero-photo {

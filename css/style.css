@@ -152,22 +152,29 @@ section + section { border-top: 1px solid var(--border-sub); }
 
 .hero-inner {
   display: flex;
-  gap: 52px;
+  gap: 40px;
   align-items: flex-start;
 }
 
-.hero-photo-wrap { flex-shrink: 0; }
+.hero-photo-wrap {
+  flex-shrink: 0;
+  order: 2;
+}
 
 .hero-photo {
-  width: 160px;
-  height: 160px;
+  width: 80px;
+  height: 80px;
   border-radius: var(--radius);
   object-fit: cover;
   object-position: center top;
   border: 1px solid var(--border);
 }
 
-.hero-text { flex: 1; min-width: 0; }
+.hero-text {
+  flex: 1;
+  min-width: 0;
+  order: 1;
+}
 
 .hero-eyebrow {
   font-size: 11px;
@@ -609,8 +616,8 @@ footer {
 /* 17. Responsive
    ========================================== */
 @media (max-width: 680px) {
-  .hero-inner { flex-direction: column; gap: 24px; }
-  .hero-photo { width: 110px; height: 110px; }
+  .hero-inner { flex-direction: column-reverse; gap: 20px; }
+  .hero-photo { width: 72px; height: 72px; }
   .edu-entry { grid-template-columns: 1fr; gap: 6px; }
   .edu-details { justify-content: flex-start; }
   .exp-entry { grid-template-columns: 1fr; }

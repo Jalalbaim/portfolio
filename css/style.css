@@ -203,11 +203,12 @@ section + section {
 }
 
 .hero-photo {
-  /* Un peu plus grand par défaut + fluide si la place le permet */
-  width: clamp(160px, 22vw, 220px);
-  height: clamp(160px, 22vw, 220px);
+  width: 150px;
+  height: 150px;
+  max-width: none; /* prevent global img { max-width: 100% } from collapsing the size */
   border-radius: var(--radius);
   object-fit: cover;
+  object-position: center top;
   border: 1px solid var(--border);
 }
 

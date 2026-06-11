@@ -84,38 +84,13 @@
           <!-- V-EditR -->
           <li class="proj-entry">
             <div class="proj-title-row">
-              <span class="proj-title">V-EditR</span>
+              <span class="proj-title"></span><strong>V-EditR</strong></span>
               <span class="proj-year">2025</span>
             </div>
-            <p class="proj-tagline">
-              Reasoning-first image editor powered by Vision–Language Models
-            </p>
             <p class="proj-desc">
               An image editing pipeline that understands complex natural language
-              instructions and applies precise, context-aware edits. Unlike
-              conventional tools, V-EditR first reasons about scene context,
-              spatial relationships, and object identities before modifying
-              anything — handling instructions such as
-              <em>"remove the chair behind the table"</em> or
-              <em>"make the person holding the phone wear a black jacket"</em>.
+              instructions and applies precise, context-aware edits. Using a multi-stage pipeline: text → plan generation → object grounding → edit → validation.
             </p>
-            <p class="proj-block-label">Approach</p>
-            <ul class="proj-features">
-              <li>Multi-stage pipeline: text → plan generation → object grounding → edit → validation</li>
-              <li>Spatial and relational reasoning ("next to", "behind", "holding")</li>
-              <li>Object grounding with GroundingDINO + SAM segmentation masks</li>
-              <li>Modular architecture with separate planners, validators, and verifiers</li>
-            </ul>
-            <p class="proj-block-label">Stack</p>
-            <div class="proj-chips">
-              <span class="chip">Python</span>
-              <span class="chip">GroundingDINO</span>
-              <span class="chip">SAM</span>
-              <span class="chip">InstructPix2Pix</span>
-              <span class="chip">ControlNet</span>
-              <span class="chip">Stable Diffusion</span>
-              <span class="chip">LLM Parser</span>
-            </div>
             <div class="proj-footer">
               <a
                 class="btn btn-sm"
@@ -141,7 +116,7 @@
           <!-- TrustRAG -->
           <li class="proj-entry">
             <div class="proj-title-row">
-              <span class="proj-title">TrustRAG</span>
+              <span class="proj-title"><strong>TrustRAG</strong></span>
               <span class="proj-year">2024</span>
             </div>
             <p class="proj-tagline">
@@ -149,28 +124,8 @@
             </p>
             <p class="proj-desc">
               A medical-domain QA system built on hybrid dense + sparse retrieval
-              with hallucination prevention. Uses ~230K Wikipedia medical passages.
-              Hallucinated content is blocked and replaced with explicit, grounded
-              refusal messages rather than silently returned to the user.
+              with hallucination prevention. Cross-encoder reranking for improved passage relevance. NLI-based faithfulness verification — hallucinated sentences are blocked. Evaluated with RAGAS: Faithfulness, Answer Relevancy, Context Precision.
             </p>
-            <p class="proj-block-label">Approach</p>
-            <ul class="proj-features">
-              <li>Hybrid retrieval: dense (FAISS) + sparse (BM25) with score fusion</li>
-              <li>Cross-encoder reranking for improved passage relevance</li>
-              <li>NLI-based faithfulness verification — hallucinated sentences are blocked</li>
-              <li>Evaluated with RAGAS: Faithfulness, Answer Relevancy, Context Precision</li>
-            </ul>
-            <p class="proj-block-label">Stack</p>
-            <div class="proj-chips">
-              <span class="chip">Python</span>
-              <span class="chip">FAISS</span>
-              <span class="chip">BM25</span>
-              <span class="chip">e5-small-v2</span>
-              <span class="chip">MiniLM cross-encoder</span>
-              <span class="chip">gemma3:4b (Ollama)</span>
-              <span class="chip">nli-deberta-v3-base</span>
-              <span class="chip">RAGAS</span>
-            </div>
             <div class="proj-footer">
               <a
                 class="btn btn-sm"
@@ -196,12 +151,9 @@
           <!-- FocusFlow -->
           <li class="proj-entry">
             <div class="proj-title-row">
-              <span class="proj-title">FocusFlow</span>
+              <span class="proj-title"><strong>FocusFlow</strong></span>
               <span class="proj-year">2025</span>
             </div>
-            <p class="proj-tagline">
-              Localized image editing via masked velocity blending — no manual masks required
-            </p>
             <p class="proj-desc">
               A novel editing method built on Stable Diffusion 3 that enables
               precise, localized edits using only text prompts. Extends the
@@ -209,22 +161,6 @@
               modify via velocity field analysis, then applying masked velocity
               blending to confine edits to the relevant area.
             </p>
-            <p class="proj-block-label">Approach</p>
-            <ul class="proj-features">
-              <li>Automatic mask generation via velocity field differencing between source/target prompts</li>
-              <li>Masked velocity blending: V_blend = M · V_target + (1 − M) · V_source</li>
-              <li>Evaluated on 40 test cases: pose changes, background replacement, material/style edits</li>
-              <li>Best CLIP-T score (0.296) vs. FlowEdit and SDEdit baselines</li>
-            </ul>
-            <p class="proj-block-label">Stack</p>
-            <div class="proj-chips">
-              <span class="chip">Python 3.10+</span>
-              <span class="chip">PyTorch 2.x + CUDA</span>
-              <span class="chip">Stable Diffusion 3</span>
-              <span class="chip">diffusers</span>
-              <span class="chip">CLIP</span>
-              <span class="chip">LPIPS</span>
-            </div>
             <div class="proj-footer">
               <a
                 class="btn btn-sm"

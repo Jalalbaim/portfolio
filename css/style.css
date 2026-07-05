@@ -30,9 +30,9 @@
   --space-8: 32px;
 
   /* Layout */
-  --content-max-width: 620px;
+  --content-max-width: 900px;
   --avatar-size: 72px;
-  --btn-radius: 3px;
+  --btn-radius: 6px;
 }
 
 /* =============================
@@ -109,9 +109,17 @@ main {
 /* =============================
    SOCIAL LINKS
    ============================= */
+.links-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4); /* 16px */
+}
+
 .links {
   font-size: var(--font-size-base);
-  margin-bottom: var(--space-4); /* 16px */
   color: var(--color-text-primary);
 }
 
@@ -123,10 +131,6 @@ main {
 /* =============================
    CV BUTTON
    ============================= */
-p:has(.resume-btn) {
-  margin-top: var(--space-4); /* 16px */
-  margin-bottom: var(--space-4);
-}
 
 .resume-btn {
   display: inline-block;

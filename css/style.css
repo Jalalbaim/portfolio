@@ -95,9 +95,12 @@ main {
   font-family: var(--font-family);
   font-size: var(--font-size-h1);
   font-weight: 700;
-  color: var(--color-text-primary);
   line-height: 1.2;
   margin: 0;
+  background: linear-gradient(90deg, #d62828, #2a9d3f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .subtitle {

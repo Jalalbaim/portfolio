@@ -31,7 +31,8 @@
 
   /* Layout */
   --content-max-width: 900px;
-  --avatar-size: 72px;
+  --avatar-width: 265px;
+  --avatar-ratio: 4 / 3;
   --btn-radius: 6px;
 }
 
@@ -75,20 +76,20 @@ main {
    HEADER / PROFILE
    ============================= */
 .header {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: minmax(0, var(--avatar-width)) 1fr;
   align-items: center;
-  gap: var(--space-4); /* 16px */
-  margin-bottom: var(--space-4); /* 16px */
+  gap: var(--space-6); /* 24px */
+  margin-bottom: var(--space-6); /* 24px */
 }
 
 .avatar {
-  width: var(--avatar-size); /* 72px */
-  height: var(--avatar-size);
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: var(--avatar-ratio);
+  border-radius: var(--btn-radius);
   display: block;
   object-fit: cover;
-  flex-shrink: 0;
+  object-position: center;
 }
 
 .header-text h1 {
@@ -115,10 +116,11 @@ main {
 .links-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: var(--space-4);
-  margin-bottom: var(--space-4); /* 16px */
+  margin-top: var(--space-3); /* 12px under the subtitle */
+  margin-bottom: 0;
 }
 
 .links {
@@ -230,12 +232,12 @@ section li a {
   }
 
   .header {
+    grid-template-columns: 1fr;
     gap: var(--space-3); /* 12px tighter on mobile */
   }
 
   .avatar {
-    width: 56px;
-    height: 56px;
+    aspect-ratio: 16 / 9;
   }
 
   .header-text h1 {
